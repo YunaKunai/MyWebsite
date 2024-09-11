@@ -1,0 +1,536 @@
+
+::selection{
+  color: white;
+  background-color: rgba(30, 140, 160, 0.4);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  background: rgb(20, 20, 20);
+  height: auto;
+  cursor: default;
+
+  /* Hide x and y Scrollbars */
+
+  /*
+  overflow-x: hidden;
+  overflow-y: hidden;
+  */
+
+
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Blue Text Span  */
+
+.blueText{
+  color: rgb(110, 219, 255);
+}
+
+/* Container Transition In Animation  */
+
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+
+  to{
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/* Side Menu */
+
+.sideMenu{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  border-radius: 50px;
+
+  position: fixed;
+
+  right: 100px;
+  top: 50%;
+
+  translate: -50% -50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  row-gap: 20px;
+
+  vertical-align: middle;
+
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 25px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0px 0px 50px rgb(30, 140, 160);
+}
+
+/* Side Menu Buttons */
+
+.sideMenu-ButtonOne,
+.sideMenu-ButtonTwo,
+.sideMenu-ButtonThree{
+  background-color: transparent;
+
+  border: none;
+  height: 50px;
+  width: 50px;
+
+  cursor: pointer;
+
+  border-radius: 50px;
+}
+
+
+/* Side Menu Button Interactions  */
+
+/* Button 1  */
+
+.sideMenu-ButtonOne{
+  transition: box-shadow 0.5s;
+}
+
+.sideMenu-ButtonOne:hover{
+  box-shadow: 0px 0px 20px rgba(0, 180, 255, 1), inset 0px 0px 20px rgba(0, 180, 255, 1);
+}
+
+.sideMenu-ButtonOne:active{
+  transition: 0.1s;
+  box-shadow: 0px 0px 200px white;
+}
+
+/* Button 2  */
+
+.sideMenu-ButtonTwo{
+  transition: box-shadow 0.5s;
+}
+
+.sideMenu-ButtonTwo:hover{
+  box-shadow: 0px 0px 20px rgba(0, 180, 255, 1), inset 0px 0px 20px rgba(0, 180, 255, 1);
+}
+
+.sideMenu-ButtonTwo:active{
+  transition: 0.1s;
+  box-shadow: 0px 0px 200px white;
+}
+
+/* Button 3  */
+
+.sideMenu-ButtonThree{
+  transition: box-shadow 0.5s;
+}
+
+.sideMenu-ButtonThree:hover{
+  box-shadow: 0px 0px 20px rgba(0, 180, 255, 1), inset 0px 0px 20px rgba(0, 180, 255, 1);
+}
+
+.sideMenu-ButtonThree:active{
+  transition: 0.1s;
+  box-shadow: 0px 0px 200px white;
+}
+
+/* Section One Styles */
+
+.sectionOne-Background-Div{
+  background-image: url(./Background_Image/Blue_Fluid_Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+
+  box-shadow: inset 0px 0px 200px rgb(30, 140, 160);
+}
+
+/* Section One Padding */
+
+.sectionOne-Padding{
+
+  /* background-color: lightblue; */
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.sectionOne-Content{
+
+  /*background-color: lightpink;*/
+
+  flex: 1;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  max-width: 1800px;
+  height: 820px;
+  
+  align-items: center;
+
+  /* Glass Morphism */
+
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0px 0px 1000px rgb(30, 140, 160);
+}
+
+/* Content Animation */
+
+.sectionOne-Content{
+  animation: transitionIn 2s;
+}
+
+/* Section One Profile Picture Div */
+
+.sectionOne-ProfilePicture-Div{
+  flex: 1;
+  text-align: right;
+  margin-right: 100px;
+}
+
+/* Section One Profile Picture */
+
+.sectionOne-ProfilePicture{
+  border-radius: 50px;
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
+}
+
+/* Section One Right Side Greetings Text */
+
+.sectionOne-GreetingsText{
+  flex: 1;
+  text-align: left;
+  margin-left: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  row-gap: 50px;
+}
+
+.sectionOne-GreetingsText-FirstLine{
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+}
+
+.sectionOne-GreetingsText-SecondLine{
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.sectionOne-GreetingsText-ThirdLine{
+  margin-left: 54px;
+  font-size: 14px;
+  color: white;
+  font-style: italic;
+}
+
+.sectionOne-GreetingsText-DesignLine{
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.sectionOne-ContactButton-Div{
+  margin-top: 20px;
+}
+
+.sectionOne-ContactButton{
+  color: white;
+  font-size: 22px;
+  background-color: rgb(0, 180, 255);
+  border: none;
+  
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-radius: 10px;
+
+  box-shadow: 0px 0px 50px rgba(56, 219, 248, 0.5);
+
+  cursor: pointer;
+
+  transition:
+    box-shadow 0.8s;
+}
+
+.sectionOne-ContactButton:hover{
+  box-shadow: 0px 0px 50px rgb(0, 255, 255);
+}
+
+.sectionOne-ContactButton:active{
+  transition: 0.1s;
+  box-shadow: 0px 0px 200px white;
+}
+
+
+
+
+
+/* Section Two Styles */
+/* Section Two Styles */
+/* Section Two Styles */
+
+.sectionTwo-Background-Div{
+  margin-top: auto;
+
+  background-image: url(./Background_Image/DarkRed_Fluid_Background.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.sectionTwo-Padding{
+
+  /*background-color: lightblue;*/
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 500px;
+  padding-right: 500px;
+
+  height: 1024px;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sectionTwo-Content{
+  
+  flex: 1;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  row-gap: 80px;
+
+  align-items: center;
+}
+
+.sectionTwo-FirstCard,
+.sectionTwo-SecondCard,
+.sectionTwo-ThirdCard{
+  flex: 1;
+
+  color: white;
+
+  background-color: black;
+
+  width: 1400px;
+
+  max-width: 1800px;
+
+  /* Glass Morphism */
+
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0px 0px 1000px rgb(30, 140, 160);
+}
+
+.sectionTwo-FirstCard-Tittle,
+.sectionTwo-SecondCard-Tittle,
+.sectionTwo-ThirdCard-Tittle{
+  font-weight: bold;
+  font-size: 64px;
+
+  margin-top: 28px;
+  margin-bottom: 20px;
+  margin-left: 38px;
+  margin-right: 0;
+}
+
+.sectionTwo-FirstCard-Tittle{
+  color: rgb(110, 220, 255);
+}
+
+.sectionTwo-SecondCard-Tittle{
+  color: rgb(110, 220, 255);
+}
+
+.sectionTwo-ThirdCard-Tittle{
+  color: rgb(110, 220, 255);
+}
+
+.sectionTwo-FirstCard-Line,
+.sectionTwo-SecondCard-Line,
+.sectionTwo-ThirdCard-Line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.globeIcon,
+.cubeIcon,
+.notesIcon{
+  color: rgb(110, 220, 255);
+  margin: 20px 30px 0 0;
+}
+
+.sectionTwo-FirstCard-Text,
+.sectionTwo-SecondCard-Text,
+.sectionTwo-ThirdCard-Text{
+  margin-top: 0;
+  margin-bottom: 12px;
+  margin-left: 56px;
+  margin-right: 56px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sectionTwo-FirstCard-ShowMore,
+.sectionTwo-SecondCard-ShowMore,
+.sectionTwo-ThirdCard-ShowMore{
+  color: rgb(110, 220, 255);
+  font-size: 12px;
+  background-color: transparent;
+  border: solid;
+  border-color: rgb(110, 220, 255);
+  border-radius: 10px;
+  border-width: 1px;
+
+  transform: translate(50%, 50%);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  
+  position: absolute;
+
+  bottom: 60px;
+  right: 100px;
+
+  cursor: pointer;
+  transition: box-shadow .5s, padding .5s, background-color .5s, color .5s, font-weight .5s;
+}
+
+.sectionTwo-FirstCard-ShowMore:hover,
+.sectionTwo-SecondCard-ShowMore:hover,
+.sectionTwo-ThirdCard-ShowMore:hover{
+  box-shadow: 0px 0px 20px rgba(110, 220, 255, 0.8);
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  background-color: rgb(110, 220, 255);
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+/* Section Three Styles */
+/* Section Three Styles */
+/* Section Three Styles */
+
+.sectionThree-Background-Div{
+  margin-top: auto;
+  background-image: url(./Background_Image/BlueRed_Fluid_Background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
+
+.sectionThree-Padding{
+
+  /* background-color: lightblue; */
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  height: 1024px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  row-gap: 120px;
+
+  align-items: center;
+}
+
+.sectionThree-Card{
+  background-color: azure;
+
+  height: 400px;
+  width: 1400px;
+
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  box-shadow: 0px 0px 1000px rgb(30, 140, 160);
+}
+
+.sectionThree-Card-Content{
+  position: absolute;
+  top: 50%;
+
+  transform: translateY(-50%);
+  
+  margin: 0 100px 0 100px;
+
+  text-align: center;
+}
+
+.sectionThree-Card-Content-TextOne{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: arial;
+  color: white;
+}
